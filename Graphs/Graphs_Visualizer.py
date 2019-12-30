@@ -15,15 +15,15 @@ pygame.init()
 fpsClock = pygame.time.Clock()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-nodes_names = ["A", "B", "C", "D"]
-nodes_xy = [(50,300), (350, 150), (200, 300), (200,150)]
-edges = [[0,0,1,0], [0, 0, 1, 1], [1, 1, 0, 1], [0, 1, 1, 0]]
+nodes_names1 = ["A", "B", "C", "D"]
+nodes_xy1 = [(50,300), (350, 150), (200, 300), (200,150)]
+edges1 = [[0,0,1,0], [0, 0, 1, 1], [1, 1, 0, 1], [0, 1, 1, 0]]
 
 # apply the function you want to see, edges as argoument -> in the example we call Dfs()
-selected_algorithm_path = alg.Dfs(edges)
+selected_algorithm_path = alg.Dfs(edges1)
 
 # create a graph to visually represent it
-gr = Graph(nodes_xy, edges, nodes_names)
+gr = Graph(nodes_xy1, edges1, nodes_names1)
 
       # RAPRESENTATION OF GR
 
